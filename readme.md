@@ -18,31 +18,42 @@ Download this Git Repo to your computer to see what we are doing.
 ```
 sh
 git clone https://github.com/USERNAME/REPOSITORY.git
-
 ```
 To grab a complete copy of another user's repository, use git clone like this:
 
 
 ##Requirements
+
 A
+[Requirements Documentation Currently](../Documents/Planning/Zombie Tag Requirements.docx)
+
+
+[Requirements Documentation Currently](/Documents/Planning/Zombie Tag Requirements.docx)
+
 
 ##Planning
+
 b
 
 ##Utilisation
+
 c
 
 ##Costing
+
 d
 
 ##Fabrication
+
 e
 
 
 ##Testing
+
 f
 
 ##Deployment
+
 g
 
 
