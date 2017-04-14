@@ -12,19 +12,6 @@ We will be covering Requirements, Planning, Utilisation, Costing, Fabrication, D
 - [Deployment](#Deployment)
 
 
-
-
-
-
-##Requirements
-##Planning
-##Utilisation
-##Costing
-##Fabrication
-##Testing
-##Deployment
-
-
 ##Clone
 Download this Git Repo to your computer to see what we are doing. 
 
@@ -35,6 +22,21 @@ git clone https://github.com/USERNAME/REPOSITORY.git
 ```
 To grab a complete copy of another user's repository, use git clone like this:
 
+
+##Requirements
+A
+##Planning
+b
+##Utilisation
+c
+##Costing
+d
+##Fabrication
+e
+##Testing
+f
+##Deployment
+g
 
 
 ## Support
