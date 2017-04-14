@@ -25,16 +25,23 @@ To grab a complete copy of another user's repository, use git clone like this:
 
 ##Requirements
 A
+
 ##Planning
 b
+
 ##Utilisation
 c
+
 ##Costing
 d
+
 ##Fabrication
 e
+
+
 ##Testing
 f
+
 ##Deployment
 g
 
