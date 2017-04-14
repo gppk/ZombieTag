@@ -12,7 +12,7 @@ We will be covering Requirements, Planning, Utilisation, Costing, Fabrication, D
 - [Deployment](#Deployment)
 
 
-##Clone
+## Clone
 	Download this Git Repo to your computer to see what we are doing. 
 
 	```
@@ -22,41 +22,41 @@ We will be covering Requirements, Planning, Utilisation, Costing, Fabrication, D
 	To grab a complete copy of another user's repository, use git clone like this:
 
 
-##Requirements
+## Requirements
 
 Requirements Document is currenly [Here](/Documents/Planning/Zombie Tag Requirements.docx)
 
 
-##Planning
+## Planning
 
 We Will put Planning / Basecamp stuff here. 
 It will be filled out when we have time. 
 
-##Utilisation
+## Utilisation
 
 Boilerplate Boilerplate Boilerplate 
 Boilerplate Boilerplate Boilerplate 
 Boilerplate Boilerplate Boilerplate 
 
-##Costing
+## Costing
 
 Boilerplate Boilerplate Boilerplate 
 Boilerplate Boilerplate Boilerplate 
 Boilerplate Boilerplate Boilerplate 
 
-##Fabrication
+## Fabrication
 
 Boilerplate Boilerplate Boilerplate 
 Boilerplate Boilerplate Boilerplate 
 Boilerplate Boilerplate Boilerplatee
 
-##Testing
+## Testing
 
 Boilerplate Boilerplate Boilerplate 
 Boilerplate Boilerplate Boilerplate 
 Boilerplate Boilerplate Boilerplate 
 
-##Deployment
+## Deployment
 
 Boilerplate Boilerplate Boilerplate 
 Boilerplate Boilerplate Boilerplate 
