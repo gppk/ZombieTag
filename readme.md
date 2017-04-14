@@ -13,48 +13,54 @@ We will be covering Requirements, Planning, Utilisation, Costing, Fabrication, D
 
 
 ##Clone
-Download this Git Repo to your computer to see what we are doing. 
+	Download this Git Repo to your computer to see what we are doing. 
 
-```
-sh
-git clone https://github.com/USERNAME/REPOSITORY.git
-```
-To grab a complete copy of another user's repository, use git clone like this:
+	```
+	sh
+	git clone https://github.com/USERNAME/REPOSITORY.git
+	```
+	To grab a complete copy of another user's repository, use git clone like this:
 
 
 ##Requirements
 
-A
-[Requirements Documentation Currently](../Documents/Planning/Zombie Tag Requirements.docx)
-
-
-[Requirements Documentation Currently](/Documents/Planning/Zombie Tag Requirements.docx)
+	Requirements Document is currenly [Here](/Documents/Planning/Zombie Tag Requirements.docx)
 
 
 ##Planning
 
-b
+	We Will put Planning / Basecamp stuff here. 
+	It will be filled out when we have time. 
 
 ##Utilisation
 
-c
+	Boilerplate Boilerplate Boilerplate 
+	Boilerplate Boilerplate Boilerplate 
+	Boilerplate Boilerplate Boilerplate 
 
 ##Costing
 
-d
+	Boilerplate Boilerplate Boilerplate 
+	Boilerplate Boilerplate Boilerplate 
+	Boilerplate Boilerplate Boilerplate 
 
 ##Fabrication
 
-e
-
+	Boilerplate Boilerplate Boilerplate 
+	Boilerplate Boilerplate Boilerplate 
+	Boilerplate Boilerplate Boilerplatee
 
 ##Testing
 
-f
+	Boilerplate Boilerplate Boilerplate 
+	Boilerplate Boilerplate Boilerplate 
+	Boilerplate Boilerplate Boilerplate 
 
 ##Deployment
 
-g
+	Boilerplate Boilerplate Boilerplate 
+	Boilerplate Boilerplate Boilerplate 
+	Boilerplate Boilerplate Boilerplate 
 
 
 ## Support
