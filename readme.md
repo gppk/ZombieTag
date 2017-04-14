@@ -1,36 +1,41 @@
-# README Boilerplate
-
-A template of README best practices to make your README simple to understand and easy to use. 
+# Zombie Tag EMF2018 Project
+This is the homepage for the Zombie Tag project that we are building for EMF2018
+We will be covering Requirements, Planning, Utilisation, Costing, Fabrication, Deployment and Testing from this Github page. 
 
 ## Table of Contents
+- [Requirements](#Requirements)
+- [Planning](#Planning)
+- [Utilisation](#Utilisation)
+- [Costing](#Costing)
+- [Fabrication](#Fabrication)
+- [Testing](#Testing)
+- [Deployment](#Deployment)
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Support](#support)
-- [Contributing](#contributing)
 
-## Installation
 
-Download to your project directory, add `README.md`, and commit:
 
-```sh
-curl -LO http://git.io/Xy0Chg
-git add README.md
-git commit -m "Use README Boilerplate"
+
+
+##Requirements
+##Planning
+##Utilisation
+##Costing
+##Fabrication
+##Testing
+##Deployment
+
+
+##Clone
+Download this Git Repo to your computer to see what we are doing. 
+
 ```
+sh
+git clone https://github.com/USERNAME/REPOSITORY.git
 
-## Usage
+```
+To grab a complete copy of another user's repository, use git clone like this:
 
-Replace the contents of `README.md` with your project's:
 
-- Name
-- Description
-- Installation instructions
-- Usage instructions
-- Support instructions
-- Contributing instructions
-
-Feel free to remove any sections that aren't applicable to your project.
 
 ## Support
 
