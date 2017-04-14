@@ -24,43 +24,43 @@ We will be covering Requirements, Planning, Utilisation, Costing, Fabrication, D
 
 ##Requirements
 
-	Requirements Document is currenly [Here](/Documents/Planning/Zombie Tag Requirements.docx)
+Requirements Document is currenly [Here](/Documents/Planning/Zombie Tag Requirements.docx)
 
 
 ##Planning
 
-	We Will put Planning / Basecamp stuff here. 
-	It will be filled out when we have time. 
+We Will put Planning / Basecamp stuff here. 
+It will be filled out when we have time. 
 
 ##Utilisation
 
-	Boilerplate Boilerplate Boilerplate 
-	Boilerplate Boilerplate Boilerplate 
-	Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
 
 ##Costing
 
-	Boilerplate Boilerplate Boilerplate 
-	Boilerplate Boilerplate Boilerplate 
-	Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
 
 ##Fabrication
 
-	Boilerplate Boilerplate Boilerplate 
-	Boilerplate Boilerplate Boilerplate 
-	Boilerplate Boilerplate Boilerplatee
+Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplatee
 
 ##Testing
 
-	Boilerplate Boilerplate Boilerplate 
-	Boilerplate Boilerplate Boilerplate 
-	Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
 
 ##Deployment
 
-	Boilerplate Boilerplate Boilerplate 
-	Boilerplate Boilerplate Boilerplate 
-	Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
+Boilerplate Boilerplate Boilerplate 
 
 
 ## Support
