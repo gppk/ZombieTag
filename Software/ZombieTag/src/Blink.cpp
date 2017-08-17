@@ -19,8 +19,9 @@
   modified 8 Sep 2016
   by Colby Newman
 */
-
+#ifndef UNIT_TEST
 #include "Arduino.h"
+#endif
 
 // the setup function runs once when you press reset or power the board
 void setup() {
