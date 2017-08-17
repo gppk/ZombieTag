@@ -6,3 +6,8 @@
 TEST(inputa,inputb) {
     EXPECT_EQ(0, 0);
 }
+
+// Test sending zero bits.
+TEST(inputa,inputb) {
+    EXPECT_EQ(1, 1);
+}
