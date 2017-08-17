@@ -8,6 +8,6 @@ TEST(inputa,inputb) {
 }
 
 // Test sending zero bits.
-TEST(inputa,inputb) {
+TEST(inputc,inputd) {
     EXPECT_EQ(1, 1);
 }
