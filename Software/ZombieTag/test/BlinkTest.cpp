@@ -11,3 +11,9 @@ TEST(inputa,inputb) {
 TEST(inputc,inputd) {
     EXPECT_EQ(1, 1);
 }
+
+
+// Test sending zero bits.
+TEST(inputr,inputf) {
+    EXPECT_EQ(1, 1);
+}
