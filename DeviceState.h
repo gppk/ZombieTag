@@ -4,7 +4,8 @@ enum DeviceState {
     initialising,
     human,
     infected,
-    medicalzone
+    medicalzone,
+    null
 };
 
 const char* DeviceStateToString( DeviceState ds ) {
@@ -14,6 +15,7 @@ const char* DeviceStateToString( DeviceState ds ) {
         case DeviceState::human: return "human";
         case DeviceState::infected: return "infected";
         case DeviceState::medicalzone: return "medical zone";
+        case DeviceState::null: return "null";
         default: return "Default";
     }
 }
@@ -23,4 +25,17 @@ DeviceState StringToDeviceState (String s) {
     if ( s == "human" ) return DeviceState::human;
     if ( s == "infected" ) return DeviceState::infected;
     if ( s == "medical zone" ) return DeviceState::medicalzone;
+    // else
+    return DeviceState::null;
+}
+
+// Not sure if this deserves to be in here or Lora_Manager.h but probs here.
+bool is_message_ztag ( String recievedLoraMessage ) {
+    bool isZtag = false;
+
+    if ( StringToDeviceState(recievedLoraMessage) != DeviceState::null ) {
+        isZtag = true;
+    }
+    
+    return isZtag;
 }

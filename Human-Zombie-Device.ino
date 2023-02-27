@@ -24,6 +24,7 @@ void setup() {
   
   if ( !init_lora() ) {
     Serial.println("Starting LoRa failed!");
+    write_oled_and_serial_line(3, "!!LORA FAILED!!");
     while (1);
   }
   Serial.println("LoRa Initializing OK!");
@@ -35,26 +36,31 @@ void setup() {
 
 void loop() {
 
-  get_new_lora_packet();
-  Serial.println("ZTAg Packet recieved, doing switch now");
+  if (is_message_ztag( get_new_lora_packet() ) ) {
 
-  // Main behaviour loop
-  if ( DeviceState::human == deviceState ){
-    
-  }
-  else if ( DeviceState::infected == deviceState ){
-    
-  }
-  else if ( DeviceState::medicalzone == deviceState ){
-    
+    Serial.println("ZTAg Packet recieved, doing switch now");
+
+    // Main behaviour loop
+    if ( DeviceState::human == deviceState ){
+      
+    }
+    else if ( DeviceState::infected == deviceState ){
+      
+    }
+    else if ( DeviceState::medicalzone == deviceState ){
+      
+    }
+    else {
+        display.setCursor(0,10);
+        display.println("BROKE");
+        display.display(); 
+        Serial.print("Current deviceState: ");
+        Serial.println(deviceState);
+        Serial.println("Hit a fail mode, no recovery. Restart");
+    }
+
   }
   else {
-      display.setCursor(0,10);
-      display.println("BROKE");
-      display.display(); 
-      Serial.print("Current deviceState: ");
-      Serial.println(deviceState);
-      Serial.println("Hit a fail mode, no recovery. Restart");
+    Serial.println("Packet something else ignoring");
   }
-
 }

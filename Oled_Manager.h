@@ -36,6 +36,8 @@ void init_oled() {
 
 void write_oled_line( uint lineNumber, const char * data ) {
 
+    // Some really dumb and basic error handling because my screen
+    // only has 5 lines to write to..
     if ( lineNumber > 5 || lineNumber == 0 ) return;
 
     //line 1 = 10, 2 = 20, 3 = 30, 4 = 40, 5 = 50

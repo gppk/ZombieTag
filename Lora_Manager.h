@@ -35,7 +35,10 @@ bool init_lora() {
     return ret;
 }
 
-void get_new_lora_packet() {
+// Also stores into the recievedPacket storage object for later retrieval
+// but returns string so we can get an instantaneous response for the packet
+// rather than trusting the storage
+String get_new_lora_packet() {
     // Get a packet - needs its own function
     bool packetFound = false;
     String loraData;
@@ -61,16 +64,9 @@ void get_new_lora_packet() {
             Serial.println(receivedPacket.message);
             Serial.print("RSSI: ");
             Serial.println(receivedPacket.rssi);
-            
-            // Needs finishing
-            if ( loraData == "infected" ) { // or any of the other known strings
-                Serial.println("Found a ZTag Identifier");
-                packetFound = true;
-            }
-            else {
-                Serial.println("No ZTag Identifier Found");
-            }
             Serial.println("###############");
+            packetFound = true;
         }
     }
+    return receivedPacket.message;
 }
