@@ -38,7 +38,7 @@ void loop() {
 
   if (is_message_ztag( get_new_lora_packet() ) ) {
 
-    Serial.println("ZTAg Packet recieved, doing switch now");
+    Serial.println("ZTAg Packet received, doing switch now");
     DeviceState recievedState = StringToDeviceState(receivedPacket.message);
     // Main behaviour loop
     if ( DeviceState::human == deviceState ){
