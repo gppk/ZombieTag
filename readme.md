@@ -1,5 +1,5 @@
-# Zombie Tag EMF2018 Project
-This is the homepage for the Zombie Tag project that we are building for EMF2018
+# Zombie Tag EMF2024 Project
+This is the homepage for the Zombie Tag project that we are building for EMF2024
 We will be covering Requirements, Planning, Utilisation, Costing, Fabrication, Deployment and Testing from this Github page. 
 
 ## Table of Contents
