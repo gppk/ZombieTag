@@ -39,11 +39,11 @@ void loop() {
   if (is_message_ztag( get_new_lora_packet() ) ) {
 
     Serial.println("ZTAg Packet received, doing switch now");
-    DeviceState recievedState = StringToDeviceState(receivedPacket.message);
+    DeviceState receivedState = StringToDeviceState(receivedPacket.message);
     // Main behaviour loop
     if ( DeviceState::human == deviceState ){
       Serial.println("Currently Human, investigating new packet");
-      if (DeviceState::infected == recievedState ) {
+      if (DeviceState::infected == receivedState ) {
         deviceState = DeviceState::infected;
         Serial.println("INFECTED!!! Going to infected state");
         write_oled_and_serial_line( 2, DeviceStateToString(deviceState) );
@@ -52,7 +52,7 @@ void loop() {
     }
     else if ( DeviceState::infected == deviceState ){
       Serial.println("Currently infected, investigating new packet");
-      if (DeviceState::medicalzone == recievedState ) {
+      if (DeviceState::medicalzone == receivedState ) {
         deviceState = DeviceState::human;
         Serial.println("Got to SAFETY!!! Going to human state");
         write_oled_and_serial_line( 2, DeviceStateToString(deviceState) );
