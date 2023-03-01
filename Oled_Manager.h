@@ -30,11 +30,12 @@ void init_oled() {
     }
 
     display.clearDisplay();
-    display.setTextColor(WHITE);
+    display.setTextColor(WHITE, BLACK);
     display.setTextSize(1);
 }
 
 void write_oled_line( uint lineNumber, const char * data ) {
+
 
     // Some really dumb and basic error handling because my screen
     // only has 5 lines to write to..
@@ -42,7 +43,9 @@ void write_oled_line( uint lineNumber, const char * data ) {
 
     //line 1 = 10, 2 = 20, 3 = 30, 4 = 40, 5 = 50
     lineNumber = lineNumber*10;
-
+    clear_oled_line(lineNumber);
+    display.setTextColor(WHITE, BLACK);
+    //TODO: Need to clear the line first. 
     display.setCursor(START_OF_LINE,lineNumber);
     display.print(data);
     display.display();
@@ -50,15 +53,16 @@ void write_oled_line( uint lineNumber, const char * data ) {
 }
 
 void write_oled_and_serial_line( uint lineNumber, const char * data ) {
-
-    if ( lineNumber > 5 || lineNumber == 0 ) return;
-
-    //line 1 = 10, 2 = 20, 3 = 30, 4 = 40, 5 = 50
-    lineNumber = lineNumber*10;
-
-    display.setCursor(START_OF_LINE,lineNumber);
-    display.print(data);
-    display.display();
-
+    write_oled_line(lineNumber, data);
     Serial.println(data);
+}
+
+// Internal function, only call after turning the devs lineNumber into pixels (i,e. * 10)
+void clear_oled_line(uint lineNumberInPixels) {
+   
+    display.setTextColor(WHITE, BLACK);
+    display.setTextSize(1);
+    display.setCursor(START_OF_LINE,lineNumberInPixels);
+    display.print("                        ");
+    display.display();
 }
