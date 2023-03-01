@@ -14,6 +14,8 @@
 #define START_OF_LINE 0
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RST);
 
+void clear_oled_line(uint lineNumberInPixels);
+
 void init_oled() {
     //reset OLED display via software
     pinMode(OLED_RST, OUTPUT);
