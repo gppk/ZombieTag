@@ -5,6 +5,7 @@
 #include <Adafruit_SSD1306.h>
 
 //OLED pins
+#define OLED_INIT_DELAY 20
 #define OLED_SDA 4
 #define OLED_SCL 15 
 #define OLED_RST 16
@@ -20,7 +21,7 @@ void init_oled() {
     //reset OLED display via software
     pinMode(OLED_RST, OUTPUT);
     digitalWrite(OLED_RST, LOW);
-    delay(20);
+    delay(OLED_INIT_DELAY);
     digitalWrite(OLED_RST, HIGH);
 
     //initialize OLED
@@ -28,7 +29,7 @@ void init_oled() {
     if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3c, false, false)) { // Address 0x3C for 128x32
         Serial.println(F("SSD1306 allocation failed"));
         //TODO: This is probably bad inside a function like this. Rework to make return a bool
-        for(;;); // Don't proceed, loop forever, 
+        for(;;){}// Don't proceed, loop forever, 
     }
 
     display.clearDisplay();
