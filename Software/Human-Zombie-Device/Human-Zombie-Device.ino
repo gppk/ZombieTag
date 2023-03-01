@@ -41,11 +41,11 @@ void loop() {
 
   if (is_message_ztag( get_new_lora_packet() ) ) {
 
-    DeviceState recievedState = StringToDeviceState(receivedPacket.message);
+    DeviceState receivedState = StringToDeviceState(receivedPacket.message);
     // Main behaviour loop, only entered if we find a ZTag message
     if ( DeviceState::human == deviceState ){
 
-      if (DeviceState::infected == recievedState ) {
+      if (DeviceState::infected == receivedState ) {
         is_infected_yet(receivedPacket.rssi);
       }
 
@@ -55,7 +55,7 @@ void loop() {
     }
     else if ( DeviceState::infected == deviceState ){
 
-      if (DeviceState::medicalzone == recievedState ) {
+      if (DeviceState::medicalzone == receivedState ) {
         deviceState = DeviceState::medicalzone;
       }
 

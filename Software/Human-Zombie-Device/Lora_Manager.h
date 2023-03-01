@@ -35,7 +35,7 @@ bool init_lora() {
     return ret;
 }
 
-// Also stores into the recievedPacket storage object for later retrieval
+// Also stores into the receivedPacket storage object for later retrieval
 // but returns string so we can get an instantaneous response for the packet
 // rather than trusting the storage
 String get_new_lora_packet() {

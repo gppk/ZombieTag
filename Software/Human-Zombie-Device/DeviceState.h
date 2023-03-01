@@ -47,10 +47,10 @@ DeviceState StringToDeviceState (String s) {
 }
 
 // Not sure if this deserves to be in here or Lora_Manager.h but probs here.
-bool is_message_ztag ( String recievedLoraMessage ) {
+bool is_message_ztag ( String receivedLoraMessage ) {
     bool isZtag = false;
 
-    if ( StringToDeviceState(recievedLoraMessage) != DeviceState::null ) {
+    if ( StringToDeviceState(receivedLoraMessage) != DeviceState::null ) {
         isZtag = true;
     }
     
