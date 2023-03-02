@@ -1,6 +1,10 @@
 #ifndef DEVICE_STATE_H
 #define DEVICE_STATE_H
 
+#include <string>
+#include <cstring>
+#include <stdbool.h>
+
 enum DeviceState {
     initialising,
     human,
@@ -9,9 +13,9 @@ enum DeviceState {
     null
 };
 
-const char* DeviceStateToString( DeviceState ds ); 
+const char* DeviceStateToString( enum DeviceState ds ); 
 
-DeviceState StringToDeviceState (String s);
+enum DeviceState StringToDeviceState (String s);
 
 bool is_message_ztag ( String recievedLoraMessage );
 

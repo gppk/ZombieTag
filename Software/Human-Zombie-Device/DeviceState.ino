@@ -1,6 +1,6 @@
 #include "DeviceState.h"
 
-const char* DeviceStateToString( DeviceState ds ) {
+const char* DeviceStateToString( enum DeviceState ds ) {
     switch ( ds )
     {
         case DeviceState::initialising:
@@ -18,7 +18,7 @@ const char* DeviceStateToString( DeviceState ds ) {
     }
 }
 
-DeviceState StringToDeviceState (String s) {  
+enum DeviceState StringToDeviceState (String s) {  
     if ( s == "initialising" ) 
         return DeviceState::initialising;
     else if( s == "human" ) return DeviceState::human;
