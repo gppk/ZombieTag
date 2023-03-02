@@ -11,18 +11,25 @@ enum DeviceState {
 const char* DeviceStateToString( DeviceState ds ) {
     switch ( ds )
     {
-        case DeviceState::initialising: return "initialising";
-        case DeviceState::human: return "human";
-        case DeviceState::infected: return "infected";
-        case DeviceState::medicalzone: return "medical zone";
-        case DeviceState::null: return "null";
-        default: return "Default";
+        case DeviceState::initialising:
+            return "initialising";
+        case DeviceState::human: 
+            return "human";
+        case DeviceState::infected: 
+            return "infected";
+        case DeviceState::medicalzone: 
+            return "medical zone";
+        case DeviceState::null:
+            return "null";
+        default: 
+            return "Default";
     }
 }
 
 DeviceState StringToDeviceState (String s) {  
-    if ( s == "initialising" ) return DeviceState::initialising;
-    if ( s == "human" ) return DeviceState::human;
+    if ( s == "initialising" ) 
+        return DeviceState::initialising;
+    else if( s == "human" ) return DeviceState::human;
     if ( s == "infected" ) return DeviceState::infected;
     if ( s == "medical zone" ) return DeviceState::medicalzone;
     // else
