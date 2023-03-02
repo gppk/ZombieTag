@@ -2,22 +2,16 @@
 #define DEVICE_STATE_H
 
 #include <Arduino.h>
-#include <string.h>
 #include <cstring>
 #include <stdbool.h>
+#include <string.h>
 
-enum DeviceState {
-    initialising,
-    human,
-    infected,
-    medicalzone,
-    null
-};
+enum DeviceState { initialising, human, infected, medicalzone, null };
 
-const char* DeviceStateToString( enum DeviceState ds ); 
+const char *DeviceStateToString(enum DeviceState ds);
 
-enum DeviceState StringToDeviceState (String s);
+enum DeviceState StringToDeviceState(String s);
 
-bool is_message_ztag ( String recievedLoraMessage );
+bool is_message_ztag(String recievedLoraMessage);
 
-#endif //DEVICE_STATE_H
+#endif   // DEVICE_STATE_H
