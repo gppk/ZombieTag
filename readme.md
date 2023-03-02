@@ -24,7 +24,7 @@ We will be covering Requirements, Planning, Utilisation, Costing, Fabrication, D
 
 ## Requirements
 
-Requirements Document is currenly [Here](/Documents/Planning/Zombie Tag Requirements.docx)
+Requirements Document is currently [Here](/Documents/Planning/Zombie Tag Requirements.docx)
 
 
 ## Planning
