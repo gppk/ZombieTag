@@ -1,6 +1,7 @@
 #ifndef DEVICE_STATE_H
 #define DEVICE_STATE_H
 
+#include <Arduino.h>
 #include <string.h>
 #include <cstring>
 #include <stdbool.h>

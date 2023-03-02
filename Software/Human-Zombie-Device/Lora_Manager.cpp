@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 //Libraries for LoRa
 #include <SPI.h>
 #include <LoRa.h>

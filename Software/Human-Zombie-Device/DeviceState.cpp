@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "DeviceState.h"
 
 const char* DeviceStateToString( enum DeviceState ds ) {

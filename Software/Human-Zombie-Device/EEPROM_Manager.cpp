@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "EEPROM_Manager.h"
 
 DeviceState init_and_read_device_state(){
