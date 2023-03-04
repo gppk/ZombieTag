@@ -2,7 +2,7 @@
 // https://hackmd.io/@exradr/clang-format
 
 // code for DOITESP32 DEVKIT V1
-  
+   
 
 // Custom ZTag Libraries
 #include "DeviceState.h"

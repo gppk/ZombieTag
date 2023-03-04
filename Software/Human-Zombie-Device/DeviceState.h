@@ -1,11 +1,10 @@
-#pragma once
+#ifndef DEVICE_STATE_H
+#define DEVICE_STATE_H
 
-//TODO: If these are to be configurable items they need to be in a struct not #defines
-#define MIN_DETECTION_RSSI_STENGTH -70
-#define NUM_OF_INFECT_HITS 3
-#define HEALTH_REDUCTION 1
-#define HEALTH_MAX 2
-#define HEALTH_MIN 0
+#include <Arduino.h>
+#include <string.h>
+#include <cstring>
+#include <stdbool.h>
 
 enum DeviceState {
     initialising,
@@ -15,40 +14,16 @@ enum DeviceState {
     null
 };
 
-struct HealthBar {
-    uint health = HEALTH_MAX; // This is something that should probably live in EEPROM too... I think we need an EEPROM layout 
-};
+const char* DeviceStateToString( enum DeviceState ds ); 
 
-uint numberOfInfectionTicks;
-HealthBar wearableHealth;
+enum DeviceState StringToDeviceState (String s);
 
-// deviceState set from EEPROM in setup
-DeviceState deviceState;
-
-const char* DeviceStateToString( DeviceState ds ) {
-    switch ( ds )
-    {
-        case DeviceState::initialising: return "initialising";
-        case DeviceState::human: return "human";
-        case DeviceState::infected: return "infected";
-        case DeviceState::medicalzone: return "medical zone";
-        case DeviceState::null: return "null";
-        default: return "Default";
-    }
-}
-
-DeviceState StringToDeviceState (String s) {  
-    if ( s == "initialising" ) return DeviceState::initialising;
-    if ( s == "human" ) return DeviceState::human;
-    if ( s == "infected" ) return DeviceState::infected;
-    if ( s == "medical zone" ) return DeviceState::medicalzone;
-    // else
-    return DeviceState::null;
-}
-
+bool is_message_ztag ( String recievedLoraMessage );
 // Not sure if this deserves to be in here or Lora_Manager.h but probs here.
 bool is_message_ztag ( String receivedLoraMessage ) {
     bool isZtag = false;
+
+#endif //DEVICE_STATE_H
 
     if ( StringToDeviceState(receivedLoraMessage) != DeviceState::null ) {
         isZtag = true;

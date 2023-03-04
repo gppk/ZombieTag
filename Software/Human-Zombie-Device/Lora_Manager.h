@@ -1,3 +1,6 @@
+#ifndef LORA_MANAGER_H
+#define LORA_MANAGER_H
+
 //Libraries for LoRa
 #include <SPI.h>
 #include <LoRa.h>
@@ -15,58 +18,18 @@
 //915E6 for North America
 #define BAND 866E6
 
-
 struct ReceivedPacket { 
   int rssi;           
   String message;
 };
-ReceivedPacket receivedPacket;
 
-bool init_lora() {
-    bool ret = false;
-    //SPI LoRa pins
-    SPI.begin(SCK, MISO, MOSI, SS);
-    //setup LoRa transceiver module
-    LoRa.setPins(SS, RST, DIO0);
+bool init_lora();
 
-    if (LoRa.begin(BAND)) {
-        ret = true;
-    }
-    return ret;
-}
+extern ReceivedPacket receivedPacket;
 
 // Also stores into the receivedPacket storage object for later retrieval
 // but returns string so we can get an instantaneous response for the packet
 // rather than trusting the storage
-String get_new_lora_packet() {
-    // Get a packet - needs its own function
-    bool packetFound = false;
-    String loraData;
+String get_new_lora_packet() ;
 
-    while( !packetFound ) {
-        //try to parse packet
-        int packetSize = LoRa.parsePacket();
-        if ( packetSize ) {
-            //received a packet
-            Serial.println("###############");
-            Serial.print("Received packet: ");
-
-            //read packet
-            while (LoRa.available()) {
-                loraData = LoRa.readString();
-                Serial.println(loraData);
-            }
-
-            receivedPacket.rssi = LoRa.packetRssi();
-            receivedPacket.message = loraData;
-            Serial.println("Data in RSSI Packet");
-            Serial.print("Message: ");
-            Serial.println(receivedPacket.message);
-            Serial.print("RSSI: ");
-            Serial.println(receivedPacket.rssi);
-            Serial.println("###############");
-            packetFound = true;
-        }
-    }
-    return receivedPacket.message;
-}
+#endif //LORA_MANAGER_H
