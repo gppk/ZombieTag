@@ -1,1 +1,148 @@
-<mxfile host="app.diagrams.net" modified="2023-03-04T21:26:39.080Z" agent="5.0 (Windows)" version="21.0.2" etag="gSuor2i-6RMb4MbPaSF6" type="github"><diagram name="Page-1" id="esGuOV4Rx_bUTmLkC89K">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-03-04T21:44:31.820Z" agent="5.0 (Windows)" etag="emzj11SK3La5-8Eu15bw" version="21.0.2" type="github">
+  <diagram name="Page-1" id="esGuOV4Rx_bUTmLkC89K">
+    <mxGraphModel dx="2074" dy="1078" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="47fTI4gATI6EFpufBhaR-26" value="&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;ZTag User Wearable&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;[Hardware Platform]&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="250" y="270" width="1020" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-28" target="47fTI4gATI6EFpufBhaR-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-28" value="&lt;div&gt;ZTag Concatanator&lt;br&gt;&lt;/div&gt;&lt;div&gt;[Hardware System]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ESP32 with Wifi &amp;amp; Lora enabled. * Scrapes data from ZTag Wearables &lt;br&gt;&lt;/div&gt;&lt;div&gt;* Sends config commands to ZTag Wearables&lt;/div&gt;&lt;div&gt;* Communicates with backend system via REST over WiFi&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="260" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-29" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;LoRa Communication to send commands and recieve gameplay data&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="430" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;startArrow=classic;startFill=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-31" target="47fTI4gATI6EFpufBhaR-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1530" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-31" value="&lt;div&gt;Game Peripherals&lt;/div&gt;&lt;div&gt;[Hardware Platforms]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Devices such as safezones, medic packs that interact with the players. They will have their own functionality .&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="260" y="790" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-32" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;LoRa Communication to configure and report status&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="520" y="830" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-33" value="&lt;div&gt;Actions to change the state of the user device, along with potential ACK from the wearable&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="380" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;startArrow=none;startFill=0;shadow=0;dashed=1;" edge="1" parent="1" target="47fTI4gATI6EFpufBhaR-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="420" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="135" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;startArrow=classic;startFill=1;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-37" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="120" y="330" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-38" value="Can see Game State Information (Infected/Human etc)" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="160" y="310" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-39" value="Interacts with Game Peripherals" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="146" y="798" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-40" target="47fTI4gATI6EFpufBhaR-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-40" value="Other Game Participants" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="120" y="120" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-41" value="Interacts with other users all with the same system" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="150" y="230" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-42" value="&lt;div&gt;BackEnd System&lt;/div&gt;&lt;div&gt;[Software System]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PC/Web based application with REST interface for receiving Data and setting up commands to send to device&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="40" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-43" value="REST Interface via WiFi" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1536" y="237" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-44" target="47fTI4gATI6EFpufBhaR-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-44" value="&lt;div&gt;OLED Manager&lt;/div&gt;&lt;div&gt;[Container: Arduino]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Displays useful information on screen&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="305" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-45" target="47fTI4gATI6EFpufBhaR-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="30" y="555" />
+              <mxPoint x="30" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-45" value="&lt;div&gt;LORA Manager&lt;/div&gt;&lt;div&gt;[Container: Arduino]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Enables gameplay behaviour as well as statistic sending via LORA&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="500" width="400" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;startArrow=classic;startFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-45" target="47fTI4gATI6EFpufBhaR-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="840" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="680" y="720" />
+              <mxPoint x="350" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="359" as="targetPoint" />
+            <mxPoint x="1270" y="359" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1420" y="555" />
+              <mxPoint x="1420" y="359" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;startArrow=none;startFill=0;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-37" target="47fTI4gATI6EFpufBhaR-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="360" />
+              <mxPoint x="250" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-46" target="47fTI4gATI6EFpufBhaR-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-46" value="&lt;div&gt;Device State&lt;br&gt;&lt;/div&gt;&lt;div&gt;[Container: Arduino]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Main Game Behaviour program, Understanding Received commands, Sending Screen Updates, Storing Status&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="305" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-48" value="&lt;div&gt;Device Status Updates&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="460" y="340" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-50" value="Can see Game State Information of other users (Infected/Human etc)" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="246" y="160" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="47fTI4gATI6EFpufBhaR-52" target="47fTI4gATI6EFpufBhaR-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-52" value="&lt;div&gt;Persistent Storage Manager&lt;br&gt;&lt;/div&gt;&lt;div&gt;[Container: Arduino/EEPROM]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Persistent EEPROM Storage to allow game state to persist across reboot&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="305" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-57" value="&lt;div&gt;Reads from and Writes to EEPROM&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="827" y="320" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-58" value="Main Behaviour is driven from packets from external devices that will be recieved by the LORA manager" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="700" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47fTI4gATI6EFpufBhaR-60" value="Sends and Receives Game Data" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="300" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
