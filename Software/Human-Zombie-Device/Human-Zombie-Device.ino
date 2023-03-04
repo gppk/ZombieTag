@@ -10,8 +10,6 @@
 #include "Oled_Manager.h"
 #include "Lora_Manager.h"
 
-
-
 void setup() { 
   //initialize Serial Monitor
   Serial.begin(115200);
