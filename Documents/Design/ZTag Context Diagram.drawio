@@ -1,1 +1,86 @@
-<mxfile host="app.diagrams.net" modified="2023-03-01T19:45:54.594Z" agent="5.0 (Windows)" etag="IjnZY5iuKdbch2W5aEQ_" version="20.8.23" type="device"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">7VpbV6s4FP41ffQsLoL1UVv1OMc5yznqODNvKQTICAST0Iu//uyEUApFW2tpda0+dJXs3LO/vfe3Az17kEyvGMqiP6mP455l+NOePexZlnli9eFPSmaFpH+qBSEjvm5UCe7IC9ZCQ0tz4mNeaygojQXJ6kKPpin2RE2GGKOTerOAxvVZMxTiJcGdh+Jl6SPxRaR3YZ1U8u+YhFE5s+meFjUJKhvrnfAI+XSyILIvevaAUSqKp2Q6wLE8vPJcHq9nj/HNk3v1x1/8GT2c/7j/+fdRMdjle7rMt8BwKjYeevRyn1ynISYPVzcB6z//JC+/juxi6DGKc31eeq9iVh4g9uE8dZEyEdGQpii+qKTnjOapj+U0BpSqNjeUZiA0Qfg/FmKmwYFyQUEUiSTWtbAtNvtH91eFf2Xhm1MWh9PFyuFMl7hATJxJkIDAixHnxCvFlyQuhy+2JPfRgMSK89TtOM2Zh984xAoMYEWYJhjWCP0YjpEg4/qkSMM5nLebd72lBJZjGdr0nFONO214tmPUh4BdhljoXpXi4WFhGZVIweEd0Oh/CmgENBW60jQ/mcrBkykVvNHu5IPQqCn1vRo0WjToxrDcc5+M4TGUj//doxAaPXDM4O8RI4ZGoDrdEOZdaNvSveecf0fMn8DBQvdb2FZAWdJzhuuPoEUj1pSs7Fqt1uA45ZSp4CKPJfWJh4SsIIE0IZqrcCIFCH5RnqAUhn+hyYgoYeqrboEMQZZBRaSOI4vRDDP+DR7vI6yilBoDp3JapuKRmlRVhijB6++mYUuTiAh8lyEFuwnE4rodIJ4V0TEgU2lPeoAxZgJPN8D4Mib1KNZx3e1Yri5Pquhp9rUsWoycfaMjHJvr4PgceU8XSot3My5w8h4E39FAaATrzrvB7y2chzFCHMtl39BfEpo+HhMPl0Bm2CN4LIs+EmgOVEC7r9CYAI59XrZG6WwOQ4MsHMKXRWMzCH4CNLpvo3HhFN3nXHJDFcOOuApiZ9DANLNpoQldX2pBI2AAWs1T6b8ITUvVLmu8QEIFEKl26a/mWFkJwg8sdSPQb2m+zzPMCiMCWxB1u+GC0Sc8oDFEDXuY0lRypABoS0PEwfJIGoLAqUr3ijIdWZJJtdknBfMLYkWMIuL7OF3iX00y1ZXVHrsNqz1tsVqjxWrdroz29MBdt8ZJ29MVt1/X+fHxbtOVk3VIwlURGm8xIxkwPBTzDxJdviOmMFSsQLp9nntRcarwjAL8Ah4DniWTSDCwXoUU70lxgggJxWoFbFXx2gkR0Zyu1sntTFWrc46QCijQikg/SScyCgV56smAhGIiZNtvX55bNJmus39uYa5I2ToiFx5NAxLmrMqEGM7A4akJkcj5Rsj9PHH6EO47DfeOUTck19h3uDfXShnPlEObZ09ehGCcuXuUyJf/NJiL8uKSpEzRpM9FMU3DyrNmVMBJEiRXeDb4If0mo8l8gMmK65UDoooutt0gE/0WRFk7RdTyTbm+ORvAmUg9WcaQoJChZItqhGAbppIsYhnDQSCPGpx3fKYrEtCTIqtt+nxdd25Z1os0u1Kk2XAN1poh1u5Mj84+MoFNX3A0dVbLIEpTX0gfjB2kD+Zxb7277628FoHNqiuNskEm8wf+ehpinrS/NbncrD08FCvYaq5i7iUd/UIg7Py9yitgsJx62DEbbqgwjqUc9t0gbczj7gJ0lr0P0L0Jnv3dgRROrHMAWcZuL0FK37zAUoDkyldUDc3zCGXyMU/iokFFLW7QCMe3lBOVIdrDERUCKOwy9xC0kbnTXMQkBVpTfsnR5j06Yxpmw5G3UA17p4xx+UZKvq9UV/cLScSB8utRnIb+7DWTSKsrBVrLSeS1vkrjVcbXdqV40KkepZHGOeteDHSnU+vgIGeN8r4cpLUcrFrsq/wUQ969KN+pBq5dZPPCBLl+73+wPj1K80uOtuR7S9dyUKw+hCzYTPU5qX3xGw==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-03-04T20:50:19.583Z" agent="5.0 (Windows)" etag="t1S_mTm7uDCcJSnMavXc" version="20.8.23" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2074" dy="1078" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="bzTmIngeiUGLfr8qNizR-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bzTmIngeiUGLfr8qNizR-0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;startArrow=classic;startFill=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bzTmIngeiUGLfr8qNizR-0" target="bzTmIngeiUGLfr8qNizR-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-0" value="&lt;div&gt;ZTag User Wearable&lt;/div&gt;&lt;div&gt;[Hardware Platform]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Wearable sensor to indicate if you are a human/zombie and infect other players. The core enabler for the game&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="240" y="260" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="1lsf7hvew3OrtvbVhYzL-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bzTmIngeiUGLfr8qNizR-1" target="1lsf7hvew3OrtvbVhYzL-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-1" value="&lt;div&gt;ZTag Concatanator&lt;br&gt;&lt;/div&gt;&lt;div&gt;[Hardware System]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ESP32 with Wifi &amp;amp; Lora enabled. * Scrapes data from ZTag Wearables &lt;br&gt;&lt;/div&gt;&lt;div&gt;* Sends config commands to ZTag Wearables&lt;/div&gt;&lt;div&gt;* Communicates with backend system via REST over WiFi&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="590" y="260" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-6" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;LoRa Communication to send commands and recieve gameplay data&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="460" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;startArrow=classic;startFill=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bzTmIngeiUGLfr8qNizR-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-7" value="&lt;div&gt;Game Peripherals&lt;/div&gt;&lt;div&gt;[Hardware Platforms]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Devices such as safezones, medic packs that interact with the players. They will have their own functionality .&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="240" y="560" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-10" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;LoRa Communication to configure and report status&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="500" y="600" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-11" value="&lt;div&gt;Actions to change the state of the user device, along with potential ACK from the wearable&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="330" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-13" value="ZTag Context Diagram" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="100" y="20" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;startArrow=none;startFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bzTmIngeiUGLfr8qNizR-14" target="bzTmIngeiUGLfr8qNizR-0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="350" />
+              <mxPoint x="170" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;startArrow=none;startFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="bzTmIngeiUGLfr8qNizR-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="410" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="125" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;startArrow=classic;startFill=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bzTmIngeiUGLfr8qNizR-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-14" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="110" y="320" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-17" value="Wears a device" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="330" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-21" value="Interacts with Game Peripherals" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="130" y="500" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-22" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="110" y="110" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bzTmIngeiUGLfr8qNizR-24" value="Interacts with other users all with the same system" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=11;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="140" y="220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1lsf7hvew3OrtvbVhYzL-0" value="&lt;div&gt;BackEnd System&lt;/div&gt;&lt;div&gt;[Software System]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PC/Web based application with REST interface for receiving Data and setting up commands to send to device&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="590" y="40" width="180" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
