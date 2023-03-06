@@ -10,9 +10,6 @@
 #include "Oled_Manager.h"
 #include "Lora_Manager.h"
 
-// deviceState set from EEPROM in setup
-DeviceState deviceState;
-
 void setup() { 
   //initialize Serial Monitor
   Serial.begin(115200);
@@ -29,52 +26,54 @@ void setup() {
   }
   Serial.println("LoRa Initializing OK!");
 
+
   // Get the saved state from EEPROM and output it
   deviceState = init_and_read_device_state();
+  numberOfInfectionTicks = 0; // set the infection counter to zero. 
   write_oled_and_serial_line( 2, DeviceStateToString(deviceState) );
+
+
 }
 
 void loop() {
 
   if (is_message_ztag( get_new_lora_packet() ) ) {
 
-    Serial.println("ZTAg Packet received, doing switch now");
     DeviceState receivedState = StringToDeviceState(receivedPacket.message);
-    // Main behaviour loop
+    // Main behaviour loop, only entered if we find a ZTag message
     if ( DeviceState::human == deviceState ){
-      Serial.println("Currently Human, investigating new packet");
+
       if (DeviceState::infected == receivedState ) {
-        deviceState = DeviceState::infected;
-        Serial.println("INFECTED!!! Going to infected state");
-        write_oled_and_serial_line( 2, DeviceStateToString(deviceState) );
+        is_infected_yet(receivedPacket.rssi);
       }
-      Serial.println("Done in Human state checking");
+
+      //TODO: Decision time, currently we don't reset the health bar if you go in a medical
+      // zone whilst a human. Maybe we should. If we should then set to medicalzone here.
+
     }
     else if ( DeviceState::infected == deviceState ){
-      Serial.println("Currently infected, investigating new packet");
+
       if (DeviceState::medicalzone == receivedState ) {
-        deviceState = DeviceState::human;
-        Serial.println("Got to SAFETY!!! Going to human state");
-        write_oled_and_serial_line( 2, DeviceStateToString(deviceState) );
+        deviceState = DeviceState::medicalzone;
       }
-      Serial.println("Done in infected state checking");
 
     }
     else if ( DeviceState::medicalzone == deviceState ){
-        Serial.println("Currently in a medical zone, investigating new packet");
-        Serial.println("Done in medicalzone");
-    }
-    else {
-        display.setCursor(0,10);
-        display.println("BROKE");
-        display.display(); 
-        Serial.print("Current deviceState: ");
-        Serial.println(deviceState);
-        Serial.println("Hit a fail mode, no recovery. Restart");
-    }
 
+        Serial.println("Currently in a medical zone");
+        reset_infection_ticker();
+        reset_health();
+        deviceState = DeviceState::human;
+    }
   }
   else {
     Serial.println("Packet something else ignoring");
   }
+
+  // Update screen with status (probably don't need to do this every loop)
+  // i.e. stick this in a function and call it on any changes?
+  write_oled_and_serial_line( 2, DeviceStateToString(deviceState) );
+  String healthStr = "Health: ";
+  String fullHealthStr = healthStr + wearableHealth.health;
+  write_oled_and_serial_line( 4,  fullHealthStr.c_str());
 }
