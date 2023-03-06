@@ -7,8 +7,7 @@
 
 ReceivedPacket receivedPacket;
 
-bool
-init_lora() {
+bool init_lora() {
     bool ret = false;
     // SPI LoRa pins
     SPI.begin(SCK, MISO, MOSI, SS);
@@ -24,8 +23,7 @@ init_lora() {
 // Also stores into the recievedPacket storage object for later retrieval
 // but returns string so we can get an instantaneous response for the packet
 // rather than trusting the storage
-String
-get_new_lora_packet() {
+String get_new_lora_packet() {
     // Get a packet - needs its own function
     bool packetFound = false;
     String loraData;

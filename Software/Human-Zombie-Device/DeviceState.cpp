@@ -4,8 +4,7 @@ uint numberOfInfectionTicks;
 HealthBar wearableHealth;
 DeviceState deviceState;
 
-const char *
-DeviceStateToString(enum DeviceState ds) {
+const char * DeviceStateToString(enum DeviceState ds) {
     switch (ds) {
     case DeviceState::initialising:
         return "initialising";
@@ -22,8 +21,7 @@ DeviceStateToString(enum DeviceState ds) {
     }
 }
 
-enum DeviceState
-StringToDeviceState(String s) {
+enum DeviceState StringToDeviceState(String s) {
     if (s == "initialising")
         return DeviceState::initialising;
     else if (s == "human")
@@ -37,8 +35,7 @@ StringToDeviceState(String s) {
 }
 
 // Not sure if this deserves to be in here or Lora_Manager.h but probs here.
-bool
-is_message_ztag(String receivedLoraMessage) {
+bool is_message_ztag(String receivedLoraMessage) {
     bool isZtag = false;
 
     if (StringToDeviceState(receivedLoraMessage) != DeviceState::null) {
@@ -52,8 +49,7 @@ is_message_ztag(String receivedLoraMessage) {
 // Itll do the addition of a new infected message if its true and close
 // This function handles going to the infected device state so its not outside
 // this header.
-void
-is_infected_yet(int rssi) {
+void is_infected_yet(int rssi) {
 
     // Step 0
     // Some simple error handling, if we get here and we already have health of
@@ -89,11 +85,9 @@ is_infected_yet(int rssi) {
     }
 }
 
-void
-reset_infection_ticker() {
+void reset_infection_ticker() {
     numberOfInfectionTicks = 0;
 }
-void
-reset_health() {
+void reset_health() {
     wearableHealth.health = HEALTH_MAX;
 }

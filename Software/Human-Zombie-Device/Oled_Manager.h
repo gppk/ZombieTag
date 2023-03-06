@@ -17,8 +17,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RST);
 
 void clear_oled_line(uint lineNumberInPixels);
 
-void
-init_oled() {
+void init_oled() {
     // reset OLED display via software
     pinMode(OLED_RST, OUTPUT);
     digitalWrite(OLED_RST, LOW);
@@ -41,8 +40,7 @@ init_oled() {
     display.setTextSize(1);
 }
 
-void
-write_oled_line(uint lineNumber, const char *data) {
+void write_oled_line(uint lineNumber, const char *data) {
 
     // Some really dumb and basic error handling because my screen
     // only has 5 lines to write to..
@@ -59,16 +57,14 @@ write_oled_line(uint lineNumber, const char *data) {
     display.display();
 }
 
-void
-write_oled_and_serial_line(uint lineNumber, const char *data) {
+void write_oled_and_serial_line(uint lineNumber, const char *data) {
     write_oled_line(lineNumber, data);
     Serial.println(data);
 }
 
 // Internal function, only call after turning the devs lineNumber into pixels
 // (i,e. * 10)
-void
-clear_oled_line(uint lineNumberInPixels) {
+void clear_oled_line(uint lineNumberInPixels) {
 
     display.setTextColor(WHITE, BLACK);
     display.setTextSize(1);

@@ -1,8 +1,7 @@
 #include "EEPROM_Manager.h"
 #include <Arduino.h>
 
-DeviceState
-init_and_read_device_state() {
+DeviceState init_and_read_device_state() {
 
     // This code works but i've commented it out to not nuke the EEPROM with
     // lots of writes/reads whilst building the code. Also needs a tidy up/no

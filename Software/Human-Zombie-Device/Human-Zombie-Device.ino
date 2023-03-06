@@ -9,8 +9,7 @@
 #include "Lora_Manager.h"
 #include "Oled_Manager.h"
 
-void
-setup() {
+void setup() {
     // initialize Serial Monitor
     Serial.begin(115200);
 
@@ -33,8 +32,7 @@ setup() {
     write_oled_and_serial_line(2, DeviceStateToString(deviceState));
 }
 
-void
-loop() {
+void loop() {
 
     if (is_message_ztag(get_new_lora_packet())) {
 
