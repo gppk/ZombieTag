@@ -9,6 +9,8 @@
 #include "Ble_Manager.h"
 #include "Oled_Manager.h"
 
+Ble_Manager bleManager;
+
 void setup() {
     // initialize Serial Monitor
     Serial.begin(115200);
@@ -18,7 +20,7 @@ void setup() {
     write_oled_line(1, "ZTAG DEVICE");
     Serial.println("ZTAG DEVICE");
 
-    init_ble();
+    bleManager.initBle();
     Serial.println("Ble Initializing");
 
     // Get the saved state from EEPROM and output it
@@ -30,8 +32,8 @@ void setup() {
 void loop() {
 
 
-    scan_for_ztags();
-    print_all_ztags_found();
+    bleManager.scanForZtags();
+    bleManager.pritnAllZTagsFound();
 
     // TODO true is only while BLE conversion work is happening
     if (is_message_ztag("temp")) {

@@ -6,6 +6,9 @@
 #include <BLEAdvertisedDevice.h>
 
 #include "Ble_Manager.h"
+#include "ReceivedPacket.h"
+
+
 
 int scanTime = 5; //In seconds
 BLEScan* pBLEScan;
@@ -24,7 +27,7 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
 };
 
 //TODO: Can this return a bool to show it actually worked?
-void init_ble() {
+void Ble_Manager::initBle() {
   BLEDevice::init("");
   pBLEScan = BLEDevice::getScan(); //create new scan
   pBLEScan->setAdvertisedDeviceCallbacks(new MyAdvertisedDeviceCallbacks());
@@ -34,7 +37,7 @@ void init_ble() {
 }
 
 // Scans for <scanTime> seconds and stores any zTag data in foundZtagData vector
-void scan_for_ztags() {
+void Ble_Manager::scanForZtags() {
     foundZtagData.clear(); // Reset the found ztags
 
     BLEScanResults foundDevices = pBLEScan->start(scanTime, false);
@@ -44,26 +47,17 @@ void scan_for_ztags() {
 
     pBLEScan->clearResults();   // delete results fromBLEScan buffer to release memory
 
-    // Now we've found a bunch of ZTag obejcts well need to figure out what to do with them.
+    // Now we've found a bunch of ZTag objects well need to figure out what to do with them.
 }
 
-void print_all_ztags_found(){
+void Ble_Manager::pritnAllZTagsFound(){
     Serial.println("Printing ZTags: ");
     for(ReceivedPacket packet : foundZtagData) {
         Serial.println(packet.getMessage());
     }
 }
 
+void Ble_Manager::processZtags(){
 
-int ReceivedPacket::getRssi() {
-    return this->rssi;
 }
-String ReceivedPacket::getMessage() {
-    return this->message;
-}
-void ReceivedPacket::setRssi(int rssi) {
-    this->rssi = rssi;
-}
-void ReceivedPacket::setMessage(String message) {
-    this->message = message;
-}
+
