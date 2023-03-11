@@ -6,7 +6,7 @@
 // Custom ZTag Libraries
 #include "DeviceState.h"
 #include "EEPROM_Manager.h"
-#include "Lora_Manager.h"
+#include "Ble_Manager.h"
 #include "Oled_Manager.h"
 
 void setup() {
@@ -18,13 +18,8 @@ void setup() {
     write_oled_line(1, "ZTAG DEVICE");
     Serial.println("ZTAG DEVICE");
 
-    if (!init_lora()) {
-        Serial.println("Starting LoRa failed!");
-        write_oled_and_serial_line(3, "!!LORA FAILED!!");
-        while (1)
-            ;
-    }
-    Serial.println("LoRa Initializing OK!");
+    init_ble();
+    Serial.println("Ble Initializing");
 
     // Get the saved state from EEPROM and output it
     deviceState = init_and_read_device_state();
@@ -34,42 +29,51 @@ void setup() {
 
 void loop() {
 
-    if (is_message_ztag(get_new_lora_packet())) {
 
-        DeviceState receivedState = StringToDeviceState(receivedPacket.message);
-        // Main behaviour loop, only entered if we find a ZTag message
-        if (DeviceState::human == deviceState) {
+    scan_for_ztags();
+    print_all_ztags_found();
 
-            if (DeviceState::infected == receivedState) {
-                is_infected_yet(receivedPacket.rssi);
-            }
+    // TODO true is only while BLE conversion work is happening
+    if (is_message_ztag("temp")) {
 
-            // TODO: Decision time, currently we don't reset the health bar if
-            // you go in a medical
-            //  zone whilst a human. Maybe we should. If we should then set to
-            //  medicalzone here.
+    //     DeviceState receivedState = StringToDeviceState(receivedPacket.message);
+    //     // Main behaviour loop, only entered if we find a ZTag message
+    //     if (DeviceState::human == deviceState) {
 
-        } else if (DeviceState::infected == deviceState) {
+    //         if (DeviceState::infected == receivedState) {
+    //             is_infected_yet(receivedPacket.rssi);
+    //         }
 
-            if (DeviceState::medicalzone == receivedState) {
-                deviceState = DeviceState::medicalzone;
-            }
+    //         // TODO: Decision time, currently we don't reset the health bar if
+    //         // you go in a medical
+    //         //  zone whilst a human. Maybe we should. If we should then set to
+    //         //  medicalzone here.
 
-        } else if (DeviceState::medicalzone == deviceState) {
+    //     } else if (DeviceState::infected == deviceState) {
 
-            Serial.println("Currently in a medical zone");
-            reset_infection_ticker();
-            reset_health();
-            deviceState = DeviceState::human;
-        }
-    } else {
-        Serial.println("Packet something else ignoring");
+    //         if (DeviceState::medicalzone == receivedState) {
+    //             deviceState = DeviceState::medicalzone;
+    //         }
+
+    //     } else if (DeviceState::medicalzone == deviceState) {
+
+    //         Serial.println("Currently in a medical zone");
+    //         reset_infection_ticker();
+    //         reset_health();
+    //         deviceState = DeviceState::human;
+    //     }
+    // } else {
+    //     Serial.println("Packet something else ignoring");
     }
 
     // Update screen with status (probably don't need to do this every loop)
     // i.e. stick this in a function and call it on any changes?
-    write_oled_and_serial_line(2, DeviceStateToString(deviceState));
+    Serial.println("[x] Device Stats Start");
+    String stateString = "Cur Dev State: ";
+    String fullStateString = stateString + DeviceStateToString(deviceState);
+    write_oled_and_serial_line(2, fullStateString.c_str());
     String healthStr = "Health: ";
     String fullHealthStr = healthStr + wearableHealth.health;
     write_oled_and_serial_line(4, fullHealthStr.c_str());
+    Serial.println("[x] Device Stats Finish");
 }
