@@ -7,8 +7,7 @@
 
 #include "Ble_Manager.h"
 #include "ReceivedPacket.h"
-
-
+#include "SerialHelper.h"
 
 int scanTime = 5; //In seconds
 BLEScan* pBLEScan;
@@ -51,9 +50,10 @@ void Ble_Manager::scanForZtags() {
 }
 
 void Ble_Manager::pritnAllZTagsFound(){
+    Serial << "Number of ZTags in the area: " << foundZtagData.size() << '\n';
     Serial.println("Printing ZTags: ");
     for(ReceivedPacket packet : foundZtagData) {
-        Serial.println(packet.getMessage());
+        Serial << packet.getMessage().c_str() << " rssi: " << packet.getRssi() << '\n';
     }
 }
 
