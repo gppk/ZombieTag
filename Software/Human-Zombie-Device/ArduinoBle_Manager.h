@@ -1,6 +1,8 @@
 #ifndef ARDUINOBLE_MANAGER_H
 #define ARDUINOBLE_MANAGER_H
 
+#include <Arduino.h>
+
 class ArduinoBle_Manager
 {
 private:
