@@ -6,10 +6,10 @@
 // Custom ZTag Libraries
 #include "DeviceState.h"
 #include "EEPROM_Manager.h"
-#include "Ble_Manager.h"
+#include "ArduinoBle_Manager.h"
 #include "Oled_Manager.h"
 
-Ble_Manager bleManager;
+ArduinoBle_Manager bleManager;
 
 void setup() {
     // initialize Serial Monitor
@@ -20,23 +20,29 @@ void setup() {
     write_oled_line(1, "ZTAG DEVICE");
     Serial.println("ZTAG DEVICE");
 
-    bleManager.initBle();
+    //bleManager.initBleScan();
+    bleManager.initBleZTagDevice();
     Serial.println("Ble Initializing");
 
     // Get the saved state from EEPROM and output it
     deviceState = init_and_read_device_state();
     numberOfInfectionTicks = 0;   // set the infection counter to zero.
     write_oled_and_serial_line(2, DeviceStateToString(deviceState));
+
+    //delay(2000);
+    //bleManager.updateZtagBeaconName("updated-name");
 }
 
 void loop() {
 
-
-    bleManager.scanForZtags();
-    bleManager.pritnAllZTagsFound();
-
+    bleManager.pollBle();
+    bleManager.updateZtagBeaconName(DeviceStateToString(DeviceState::human));
+    // bleManager.scanForZtags();
+    // bleManager.pritnAllZTagsFound();
+    // bleManager.initBleBeacon();
     // TODO true is only while BLE conversion work is happening
-    if (is_message_ztag("temp")) {
+    
+    //if (is_message_ztag("temp")) {
 
     //     DeviceState receivedState = StringToDeviceState(receivedPacket.message);
     //     // Main behaviour loop, only entered if we find a ZTag message
@@ -66,16 +72,16 @@ void loop() {
     //     }
     // } else {
     //     Serial.println("Packet something else ignoring");
-    }
+    //}
 
-    // Update screen with status (probably don't need to do this every loop)
-    // i.e. stick this in a function and call it on any changes?
-    Serial.println("[x] Device Stats Start");
-    String stateString = "Cur Dev State: ";
-    String fullStateString = stateString + DeviceStateToString(deviceState);
-    write_oled_and_serial_line(2, fullStateString.c_str());
-    String healthStr = "Health: ";
-    String fullHealthStr = healthStr + wearableHealth.health;
-    write_oled_and_serial_line(4, fullHealthStr.c_str());
-    Serial.println("[x] Device Stats Finish");
+    // // Update screen with status (probably don't need to do this every loop)
+    // // i.e. stick this in a function and call it on any changes?
+    // Serial.println("[x] Device Stats Start");
+    // String stateString = "Cur Dev State: ";
+    // String fullStateString = stateString + DeviceStateToString(deviceState);
+    // write_oled_and_serial_line(2, fullStateString.c_str());
+    // String healthStr = "Health: ";
+    // String fullHealthStr = healthStr + wearableHealth.health;
+    // write_oled_and_serial_line(4, fullHealthStr.c_str());
+    // Serial.println("[x] Device Stats Finish");
 }
