@@ -1,13 +1,14 @@
 #include "ArduinoBle_Manager.h"
 
-// External Arduino LIB.
-#include <ArduinoBLE.h>
+// Internal ZTag libs for Device Understanding
+#include "DeviceState.h"
 
-#define BLE_POLL_TIMEOUT (100)
-#define BLE_DEFAULT_NAME "ZTag"
+#include "SerialHelper.h"
 
-// Internal Callback function
-void bleCentralDiscoverHandler(BLEDevice peripheral);
+#define BLE_POLL_TIMEOUT_MS (1000) 
+#define BLE_DEFAULT_NAME    ("ZTag")
+
+std::vector<ReceivedPacket> ArduinoBle_Manager::foundZtagDevices;
 
 bool ArduinoBle_Manager::initBleZTagDevice() {
 
@@ -17,50 +18,45 @@ bool ArduinoBle_Manager::initBleZTagDevice() {
     BLE.advertise();
 
     BLE.setEventHandler(BLEDiscovered, bleCentralDiscoverHandler);
-    BLE.scan(true);
+    BLE.scan(true); //not sure why this overrides the default of false, but comes from demo code
 
     return ret;
 }
 
 void ArduinoBle_Manager::updateZtagBeaconName(const char* newBeaconName) {
-
     BLE.setDeviceName(newBeaconName);
     BLE.setLocalName(newBeaconName);
     BLE.advertise();
 }
 
 void ArduinoBle_Manager::pollBle(){
-    BLE.poll(BLE_POLL_TIMEOUT);
+    // We're doing a new scan, so clear old scan results
+    foundZtagDevices.clear(); 
+    BLE.poll(BLE_POLL_TIMEOUT_MS);
 }
 
-void bleCentralDiscoverHandler(BLEDevice peripheral) {
-  // discovered a peripheral
-  Serial.println("Discovered a peripheral");
-  Serial.println("-----------------------");
+void ArduinoBle_Manager::bleCentralDiscoverHandler(BLEDevice peripheral) {
+  
+  bool isZtagDevice = false;
+  // The first thing we need to do is figure out if it's a ZTag device
+  // See getFoundZtagDevices() function comment as to why.
 
-  // print address
-  Serial.print("Address: ");
-  Serial.println(peripheral.address());
-
-  // print the local name, if present
-  if (peripheral.hasLocalName()) {
-    Serial.print("Local Name: ");
-    Serial.println(peripheral.localName());
+  // All ZTags will have local names so we can drop anything that doesn't
+  if (peripheral.hasLocalName() && is_message_ztag(peripheral.localName())) {
+    isZtagDevice = true;
   }
 
-  // print the advertised service UUIDs, if present
-  if (peripheral.hasAdvertisedServiceUuid()) {
-    Serial.print("Service UUIDs: ");
-    for (int i = 0; i < peripheral.advertisedServiceUuidCount(); i++) {
-      Serial.print(peripheral.advertisedServiceUuid(i));
-      Serial.print(" ");
-    }
-    Serial.println();
+  // Now we know we have a ZTag device then store it in foundZtagDevices
+  if (isZtagDevice)
+  {
+    // If we find a zTag device then store that in foundZTagData        
+    ReceivedPacket receivedPacket;
+    receivedPacket.setDeviceName(peripheral.localName());
+    receivedPacket.setRssi(peripheral.rssi());
+    foundZtagDevices.push_back(receivedPacket);
   }
+}
 
-  // print the RSSI
-  Serial.print("RSSI: ");
-  Serial.println(peripheral.rssi());
-
-  Serial.println();
+std::vector<ReceivedPacket> ArduinoBle_Manager::getFoundZtagDevices() {
+  return foundZtagDevices;
 }
