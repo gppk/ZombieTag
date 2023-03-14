@@ -34,7 +34,6 @@ enum DeviceState StringToDeviceState(String s) {
     return DeviceState::null;
 }
 
-// Not sure if this deserves to be in here or Lora_Manager.h but probs here.
 bool is_message_ztag(String receivedLoraMessage) {
     bool isZtag = false;
 
