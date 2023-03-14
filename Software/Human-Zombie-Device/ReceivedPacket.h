@@ -8,13 +8,13 @@ class ReceivedPacket
 {
 private:
     int rssi;
-    String message;
+    String deviceName;
 public:
     
     int getRssi();
-    String getMessage();
+    String getDeviceName();
 
     void setRssi(int rssi);
-    void setMessage(String message);
+    void setDeviceName(String deviceName);
 };
 #endif //ReceivedPacket_H

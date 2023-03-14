@@ -3,12 +3,12 @@
 int ReceivedPacket::getRssi() {
     return this->rssi;
 }
-String ReceivedPacket::getMessage() {
-    return this->message;
+String ReceivedPacket::getDeviceName() {
+    return this->deviceName;
 }
 void ReceivedPacket::setRssi(int rssi) {
     this->rssi = rssi;
 }
-void ReceivedPacket::setMessage(String message) {
-    this->message = message;
+void ReceivedPacket::setDeviceName(String deviceName) {
+    this->deviceName = deviceName;
 }
