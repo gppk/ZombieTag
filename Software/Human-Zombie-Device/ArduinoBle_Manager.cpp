@@ -3,14 +3,17 @@
 // External Arduino LIB.
 #include <ArduinoBLE.h>
 
+#define BLE_POLL_TIMEOUT (100)
+#define BLE_DEFAULT_NAME "ZTag"
+
 // Internal Callback function
 void bleCentralDiscoverHandler(BLEDevice peripheral);
 
 bool ArduinoBle_Manager::initBleZTagDevice() {
 
     bool ret = BLE.begin();
-    BLE.setDeviceName("ZTag");
-    BLE.setLocalName("ZTag");
+    BLE.setDeviceName(BLE_DEFAULT_NAME);
+    BLE.setLocalName(BLE_DEFAULT_NAME);
     BLE.advertise();
 
     BLE.setEventHandler(BLEDiscovered, bleCentralDiscoverHandler);
@@ -19,15 +22,15 @@ bool ArduinoBle_Manager::initBleZTagDevice() {
     return ret;
 }
 
-void ArduinoBle_Manager::updateZtagBeaconName(String newBeaconName) {
+void ArduinoBle_Manager::updateZtagBeaconName(const char* newBeaconName) {
 
-    BLE.setDeviceName(newBeaconName.c_str());
-    BLE.setLocalName(newBeaconName.c_str());
+    BLE.setDeviceName(newBeaconName);
+    BLE.setLocalName(newBeaconName);
     BLE.advertise();
 }
 
 void ArduinoBle_Manager::pollBle(){
-    BLE.poll(100);
+    BLE.poll(BLE_POLL_TIMEOUT);
 }
 
 void bleCentralDiscoverHandler(BLEDevice peripheral) {

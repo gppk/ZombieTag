@@ -1,7 +1,6 @@
 #ifndef ARDUINOBLE_MANAGER_H
 #define ARDUINOBLE_MANAGER_H
 
-#include <Arduino.h>
 
 class ArduinoBle_Manager
 {
@@ -10,7 +9,7 @@ private:
 public:
     bool initBleZTagDevice();
 
-    void updateZtagBeaconName(String newBeaconName);
+    void updateZtagBeaconName(const char* newBeaconName);
 
     void pollBle();
 };
