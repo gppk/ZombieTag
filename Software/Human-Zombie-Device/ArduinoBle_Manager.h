@@ -18,7 +18,7 @@ private:
     // There may be a better way, if there is i'd love to know it.
     static std::vector<ReceivedPacket> foundZtagDevices;
 
-    // Internal Callback function that gets called everytime a new device is found
+    // Internal Callback function that gets called every time a new device is found
     // whilst poll is running
     static void bleCentralDiscoverHandler(BLEDevice peripheral);
 
@@ -59,7 +59,7 @@ public:
      * 
      * No setter required, variable directly accessible from within ArduinoBle_Manager and should only be set there
      * 
-     * @return foundZtagDevices, a collection of recieved objects
+     * @return foundZtagDevices, a collection of received objects
      */
     std::vector<ReceivedPacket> getFoundZtagDevices();
     
